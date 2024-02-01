@@ -1,4 +1,4 @@
-# Data Science Jobs Dataset
+# Kaggle API Automation
 
 This repository contains a Python script for extracting and loading data related to data science job postings from a zip file into a MySQL database.
 
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 Run the Python script to extract, load, and clean the data. Make sure to update the necessary database connection details.
 
 ```bash
-python data_processing_script.py
+python export_jobs.py
 ```
 
 ### i. Search for the Dataset
@@ -58,11 +58,11 @@ kaggle datasets download -d 'lukebarousse/data-analyst-job-postings-google-searc
 Uncomment and update the following lines in the script to connect to your MySQL database:
 
 ```python
-# db = mysql.connector.connect(user='your-username', database='your-database', password='your-password')
-# cursor = db.cursor()
-# cursor.execute('create database gsearch_jobs')
-# cursor.close()
-# db.close()
+  db = mysql.connector.connect(user='your-username', database='your-database', password='your-password')
+  cursor = db.cursor()
+  cursor.execute('create database gsearch_jobs')
+  cursor.close()
+  db.close()
 ```
 
 ## 4. Data Cleaning
