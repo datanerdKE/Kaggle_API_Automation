@@ -31,17 +31,6 @@ pip install -r requirements.txt
 
 ## 2. Usage
 
-Before running the Python script, make sure to update the necessary configuration settings in `export_jobs.py`:
-
-- Open the `export_jobs.py` script.
-- Locate the database connection details.
-- Update the values for 'your-username', 'your-database', and 'your-password' based on your MySQL configuration.
-
-Then, run the script to extract, load, and clean the data.
-```bash
-python export_jobs.py
-```
-
 ### i. Search for the Dataset
 
 To search for the dataset on Kaggle, use the following command:
@@ -56,6 +45,16 @@ To download the dataset using the Kaggle API, run:
 
 ```bash
 kaggle datasets download -d 'lukebarousse/data-analyst-job-postings-google-search'
+```
+### iii. Before running the Python script, make sure to update the necessary configuration settings in `export_jobs.py`:
+
+- Open the `export_jobs.py` script.
+- Locate the database connection details.
+- Update the values for 'your-username', 'your-database', and 'your-password' based on your MySQL configuration.
+
+Then, run the script to extract, load, and clean the data.
+```bash
+python export_jobs.py
 ```
 
 ## 3. Database Connection
