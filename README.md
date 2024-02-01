@@ -1,6 +1,3 @@
-Certainly! I've added the commands for searching the dataset and downloading it using the Kaggle API to the README:
-
-```markdown
 # Data Science Jobs Dataset
 
 This repository contains a Python script for extracting and loading data related to data science job postings from a zip file into a MySQL database.
@@ -91,7 +88,4 @@ The cleaned dataset is exported to the local MySQL database.
 
 ## License
 
-This project is licensed under the [Your License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
-```
-
-Make sure to replace placeholders like `your-username`, `your-repository`, `your-database`, `your-password`, and `[Your License Name]` with the actual values. These commands can be executed in the terminal or command prompt as needed.
+This project is licensed under the MIT License 
