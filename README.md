@@ -1,17 +1,6 @@
 # Kaggle API Automation
 
 This repository contains a Python script for extracting and loading data related to data science job postings from a zip file into a MySQL database.
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Search for the Dataset](#i-search-for-the-dataset)
-  - [Download the Dataset](#ii-download-the-dataset)
-- [Database Connection](#database-connection)
-- [Data Cleaning](#data-cleaning)
-- [Export to Database](#5-export-to-database)
-  - [Before running the Python script](#6-before-running-the-python-script)
-- [License](#license)
 
 ## Prerequisites
 
