@@ -23,14 +23,7 @@ Make sure you have the following installed:
 
 ## Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
-```
-
-2. Install the required packages:
+1. Install the required packages:
 
 ```bash
 pip install -r requirements.txt
