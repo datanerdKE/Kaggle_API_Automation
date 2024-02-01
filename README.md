@@ -46,7 +46,7 @@ To download the dataset using the Kaggle API, run:
 ```bash
 kaggle datasets download -d 'lukebarousse/data-analyst-job-postings-google-search'
 ```
-### iii. Before running the Python script, make sure to update the necessary configuration settings in `export_jobs.py`:
+### iii. Before running the Python script, make sure to update the necessary configuration settings in `export_jobs.py`
 
 - Open the `export_jobs.py` script.
 - Locate the database connection details.
