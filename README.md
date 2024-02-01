@@ -31,8 +31,13 @@ pip install -r requirements.txt
 
 ## 2. Usage
 
-Run the Python script to extract, load, and clean the data. Make sure to update the necessary database connection details.
+Before running the Python script, make sure to update the necessary configuration settings in `export_jobs.py`:
 
+- Open the `export_jobs.py` script.
+- Locate the database connection details.
+- Update the values for 'your-username', 'your-database', and 'your-password' based on your MySQL configuration.
+
+Then, run the script to extract, load, and clean the data.
 ```bash
 python export_jobs.py
 ```
@@ -64,6 +69,10 @@ Uncomment and update the following lines in the script to connect to your MySQL 
   cursor.close()
   db.close()
 ```
+Update the MySQL engine connection string:
+```python
+mysql_engine = create_engine('mysql://your-username:your-password@localhost:3306/gsearch_jobs')
+```
 
 ## 4. Data Cleaning
 
@@ -93,7 +102,7 @@ The cleaned dataset is exported to the local MySQL database.
 Create database connection to Local MySQL database using SQLAlchemy:
 
 ```python
-mysql_engine = create_engine('mysql://your-username:your-password@localhost:3306/gsearch_jobs')
+dataframe.to_sql('data_science_jobs',mysql_engine,index=False,if_exists='replace')
 ```
 
 ## License
