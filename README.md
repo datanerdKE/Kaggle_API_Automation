@@ -46,16 +46,6 @@ To download the dataset using the Kaggle API, run:
 ```bash
 kaggle datasets download -d 'lukebarousse/data-analyst-job-postings-google-search'
 ```
-### iii. Before running the Python script, make sure to update the necessary configuration settings in `export_jobs.py`
-
-- Open the `export_jobs.py` script.
-- Locate the database connection details.
-- Update the values for 'your-username', 'your-database', and 'your-password' based on your MySQL configuration.
-
-Then, run the script to extract, load, and clean the data.
-```bash
-python export_jobs.py
-```
 
 ## 3. Database Connection
 
@@ -94,7 +84,7 @@ dataframe.drop(['Unnamed: 0','commute_time', 'salary_pay', 'salary_rate','job_id
     'salary_yearly', 'salary_standardized',],axis=1,inplace=True)
 ```
 
-## Export to Database
+## 5. Export to Database
 
 The cleaned dataset is exported to the local MySQL database.
 
@@ -102,6 +92,17 @@ Create database connection to Local MySQL database using SQLAlchemy:
 
 ```python
 dataframe.to_sql('data_science_jobs',mysql_engine,index=False,if_exists='replace')
+```
+
+### 6. Before running the Python script, make sure to update the necessary configuration settings in `export_jobs.py`
+
+- Open the `export_jobs.py` script.
+- Locate the database connection details.
+- Update the values for 'your-username', 'your-database', and 'your-password' based on your MySQL configuration.
+
+Then, run the script to extract, load, and clean the data.
+```bash
+python export_jobs.py
 ```
 
 ## License
