@@ -18,6 +18,8 @@ import mysql.connector
 
 mysql_engine = create_engine('mysql://export:export@localhost:3306/gsearch_jobs')
 
+# file_name = 'data-analyst-job-postings-google-search.zip'
+
 # Unzip and Load Data
 data = 'data'
 with zipfile.ZipFile('data-analyst-job-postings-google-search.zip', 'r') as zip_ref:
